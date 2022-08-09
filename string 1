@@ -1,0 +1,25 @@
+//counting length of characters
+
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void)
+{
+	int i;
+	char x[13];
+	printf("please input your name");
+	scanf("%s",x);
+	i = mystrlen(x);
+	printf("%d",i);
+}
+
+int mystrlen(char strg[])
+{
+	int i = 0;
+	while (strg[i] != '\0')
+	{
+		i++;
+	}
+	return i;
+}
